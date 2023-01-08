@@ -14,7 +14,7 @@ import os
 if bool(os.environ.get("WEBHOOK", False)):
     from sample_config import Config
 else:
-    from config import Config
+    from sample_config  import Config
 
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
@@ -34,5 +34,5 @@ if __name__ == "__main__" :
         api_hash=Config.API_HASH,
         plugins=plugins
     )
-    Config.AUTH_USERS.add(958850850)
+    Config.AUTH_USERS.add(800555393)
     app.run()
